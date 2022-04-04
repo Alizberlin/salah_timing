@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Dashboard from "./components/pages/Dashboard";
+import Settings from './components/pages/Settings'
+import {Routes, Route } from 'react-router-dom';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+import { UserProvider } from "./components/stateManager";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <UserProvider>
+      <Routes>
+        <Route path='/' element={<Dashboard />} />
+        <Route path='/settings' element={<Settings />} />
+
+
+        <Route path='*' element={<Dashboard />} />
+
+      </Routes>
+      </UserProvider>
     </div>
   );
 }
