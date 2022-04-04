@@ -1,6 +1,6 @@
 {
-  "name": "salahtiming",
-  "homepage":"https://github.com/Alizberlin/salahtiming.git",
+  "name": "salah_timing",
+  "homepage":"https://github.com/Alizberlin/salah_timing.git",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
