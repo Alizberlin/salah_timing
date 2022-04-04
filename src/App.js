@@ -13,7 +13,7 @@ function App() {
       <UserProvider>
       <Routes>
         <Route path='/salah_timing' element={<Dashboard />} />
-        <Route path='/settings' element={<Settings />} />
+        <Route path='/salah_timing/settings' element={<Settings />} />
 
 
         <Route path='*' element={<Dashboard />} />

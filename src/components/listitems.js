@@ -14,7 +14,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 
 export const mainListItems = (
   <React.Fragment>
-      <Link to='/'>
+      <Link to='/salah_timing'>
     <ListItemButton>
       <ListItemIcon>
         <DashboardIcon />
@@ -40,7 +40,7 @@ export const mainListItems = (
       </ListItemIcon>
       <ListItemText primary="Reports" />
     </ListItemButton> */}
-    <Link to='/settings'>
+    <Link to='/salah_timing/settings'>
     <ListItemButton>
       <ListItemIcon>
         <SettingsIcon />
