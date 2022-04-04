@@ -12,7 +12,7 @@ function App() {
     <div >
       <UserProvider>
       <Routes>
-        <Route path='/salahtiming' element={<Dashboard />} />
+        <Route path='/' element={<Dashboard />} />
         <Route path='/settings' element={<Settings />} />
 
 
