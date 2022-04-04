@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Alizberlin/salahtiming.git/static/css/main.26805ee0.css",
-    "main.js": "/Alizberlin/salahtiming.git/static/js/main.b258fee1.js",
+    "main.js": "/Alizberlin/salahtiming.git/static/js/main.53f6f0cb.js",
     "static/js/787.e29bd31d.chunk.js": "/Alizberlin/salahtiming.git/static/js/787.e29bd31d.chunk.js",
     "static/media/roboto-all-500-normal.woff": "/Alizberlin/salahtiming.git/static/media/roboto-all-500-normal.52cb737b682eb9661ee1.woff",
     "static/media/roboto-all-700-normal.woff": "/Alizberlin/salahtiming.git/static/media/roboto-all-700-normal.ef6d1d09b20b877fee4e.woff",
@@ -37,11 +37,11 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "/Alizberlin/salahtiming.git/static/media/roboto-greek-ext-700-normal.9674bc0ae12c2551d9d1.woff2",
     "index.html": "/Alizberlin/salahtiming.git/index.html",
     "main.26805ee0.css.map": "/Alizberlin/salahtiming.git/static/css/main.26805ee0.css.map",
-    "main.b258fee1.js.map": "/Alizberlin/salahtiming.git/static/js/main.b258fee1.js.map",
+    "main.53f6f0cb.js.map": "/Alizberlin/salahtiming.git/static/js/main.53f6f0cb.js.map",
     "787.e29bd31d.chunk.js.map": "/Alizberlin/salahtiming.git/static/js/787.e29bd31d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.26805ee0.css",
-    "static/js/main.b258fee1.js"
+    "static/js/main.53f6f0cb.js"
   ]
 }
