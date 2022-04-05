@@ -27,12 +27,12 @@ export const UserProvider = ({children}) => {
   const contextValue = useMemo(() => {
     return { state, dispatch };
   }, [state, dispatch]);
-    window.addEventListener('beforeunload', ()=>{
-    localStorage.setItem('Salah_Timing', JSON.stringify(state))
-  })
-  useEffect(() => {
-    localStorage.setItem('Salah_Timing', JSON.stringify(state))
-  }, [state])
+  //   window.addEventListener('beforeunload', ()=>{
+  //   localStorage.setItem('Salah_Timing', JSON.stringify(state))
+  // })
+  // useEffect(() => {
+  //   localStorage.setItem('Salah_Timing', JSON.stringify(state))
+  // }, [state])
   return (
     <StateContext.Provider value={contextValue}>
       {children}
