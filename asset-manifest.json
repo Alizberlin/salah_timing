@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/salah_timing.git/static/css/main.ecb3d3ff.css",
-    "main.js": "/salah_timing.git/static/js/main.ad19f054.js",
+    "main.css": "/salah_timing.git/static/css/main.58a3e987.css",
+    "main.js": "/salah_timing.git/static/js/main.dbfb0979.js",
     "static/js/787.7de701e6.chunk.js": "/salah_timing.git/static/js/787.7de701e6.chunk.js",
     "static/media/roboto-all-500-normal.woff": "/salah_timing.git/static/media/roboto-all-500-normal.52cb737b682eb9661ee1.woff",
     "static/media/roboto-all-700-normal.woff": "/salah_timing.git/static/media/roboto-all-700-normal.ef6d1d09b20b877fee4e.woff",
@@ -36,12 +36,12 @@
     "static/media/roboto-greek-ext-300-normal.woff2": "/salah_timing.git/static/media/roboto-greek-ext-300-normal.04e05839d6a35e046c13.woff2",
     "static/media/roboto-greek-ext-700-normal.woff2": "/salah_timing.git/static/media/roboto-greek-ext-700-normal.9674bc0ae12c2551d9d1.woff2",
     "index.html": "/salah_timing.git/index.html",
-    "main.ecb3d3ff.css.map": "/salah_timing.git/static/css/main.ecb3d3ff.css.map",
-    "main.ad19f054.js.map": "/salah_timing.git/static/js/main.ad19f054.js.map",
+    "main.58a3e987.css.map": "/salah_timing.git/static/css/main.58a3e987.css.map",
+    "main.dbfb0979.js.map": "/salah_timing.git/static/js/main.dbfb0979.js.map",
     "787.7de701e6.chunk.js.map": "/salah_timing.git/static/js/787.7de701e6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ecb3d3ff.css",
-    "static/js/main.ad19f054.js"
+    "static/css/main.58a3e987.css",
+    "static/js/main.dbfb0979.js"
   ]
 }
