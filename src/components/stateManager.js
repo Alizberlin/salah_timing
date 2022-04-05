@@ -1,9 +1,10 @@
 import React, {useEffect, useReducer, createContext, useMemo } from 'react';
 
-export const StateContext = createContext();
 const m = new Date().getMonth()+1;
 const y = new Date().getFullYear();
-const initialState = JSON.parse(localStorage.getItem('Salah_Timing')) || {location:{lat: 52.40, lon: 13.39}, method: 2, m: m, y: y, calender: [{meta: {timezone: '', method: {name: ''}}}]};
+const initialState = JSON.parse(localStorage.getItem('Salah_Timing')) || {location:{lat: 52.40, lon: 13.39}, method: 2, m: m, y: y, calender: [{timings: {Imsak: '',  Fajr: '', Sunrise: '',
+  Dhuhr: '', Asr: '', Sunset: '', Maghrib: '', Isha: '', Midnight: ''}, date:{readable: ''}, meta: {timezone: '', method: {name: ''}}}]};
+export const StateContext = createContext(initialState);
 
 const reducer = (state, action) => {
     switch (action.type) {

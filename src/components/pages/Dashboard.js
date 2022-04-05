@@ -200,8 +200,8 @@ function DashboardContent() {
               <Grid item xs={12}>
                 <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
                   <div className='flex justify-around flex-wrap text-xs'>
-                    {/* <span className='bg-gray-200 p-1.5 m-0.5'><strong>Time Zone: </strong>{state.calender[0].meta.timezone}</span>
-                    <span className='bg-gray-200 p-1.5 m-0.5'><strong>Source: </strong>{state.calender[0].meta.method.name}</span> */}
+                    <span className='bg-gray-200 p-1.5 m-0.5'><strong>Time Zone: </strong>{state.calender[0].meta.timezone}</span>
+                    <span className='bg-gray-200 p-1.5 m-0.5'><strong>Source: </strong>{state.calender[0].meta.method.name}</span>
                   </div>
                    
                 </Paper>

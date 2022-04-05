@@ -65,8 +65,8 @@ export default function Timings() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {state.calender.map(x => (
-            <StyledTableRow key={x.date.readable}>
+          {state.calender.map((x, i) => (
+            <StyledTableRow key={x+i}>
             <StyledTableCell component="th">
               {x.date.readable}
             </StyledTableCell>
