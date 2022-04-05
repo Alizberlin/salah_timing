@@ -14,10 +14,10 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
     backgroundColor: theme.palette.common.black,
     color: theme.palette.common.white,
-    fontSize: 8,
+    fontSize: 10,
   },
   [`&.${tableCellClasses.body}`]: {
-    fontSize: 8,
+    fontSize: 10,
   },
 }));
 
@@ -31,9 +31,9 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
-function createData(date, calories, fat, carbs, protein) {
-  return { date, calories, fat, carbs, protein };
-}
+// function createData(date, calories, fat, carbs, protein) {
+//   return { date, calories, fat, carbs, protein };
+// }
 
 // const rows = [
 //   createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
@@ -43,25 +43,24 @@ function createData(date, calories, fat, carbs, protein) {
 //   createData('Gingerbread', 356, 16.0, 49, 3.9),
 // ];
 
-const rows =[]
 export default function Timings() {
-  const {state, dispatch} = useContext(StateContext);
+  const {state} = useContext(StateContext);
   console.log(state)
   return (
     <TableContainer component={Paper}>
-      <Table sx={{ maxWidth: 400 }} aria-label="customized table">
+      <Table sx={{ maxWidth: 655 }} aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell sx={{minWidth: '3.8rem'}}>Date</StyledTableCell>
-            <StyledTableCell sx={{maxWidth: '2.8rem'}} align="right">Imsak</StyledTableCell>
-            <StyledTableCell sx={{maxWidth: '2.8rem'}} align="right">Fajr</StyledTableCell>
-            <StyledTableCell sx={{maxWidth: '2.8rem'}} align="right">Sunrise</StyledTableCell>
-            <StyledTableCell sx={{maxWidth: '2.8rem'}} align="right">Dhuhr</StyledTableCell>
-            <StyledTableCell sx={{maxWidth: '2.8rem'}} align="right">Asr</StyledTableCell>
-            <StyledTableCell sx={{maxWidth: '2.8rem'}} align="right">Sunset</StyledTableCell>
-            <StyledTableCell sx={{maxWidth: '2.8rem'}} align="right">Maghrib</StyledTableCell>
-            <StyledTableCell sx={{maxWidth: '2.8rem'}} align="right">Isha</StyledTableCell>
-            <StyledTableCell sx={{maxWidth: '2.8rem'}} align="right">Midnight</StyledTableCell>
+            <StyledTableCell >Date</StyledTableCell>
+            <StyledTableCell  align="right">Imsak</StyledTableCell>
+            <StyledTableCell  align="right">Fajr</StyledTableCell>
+            <StyledTableCell  align="right">Sunrise</StyledTableCell>
+            <StyledTableCell  align="right">Dhuhr</StyledTableCell>
+            <StyledTableCell  align="right">Asr</StyledTableCell>
+            <StyledTableCell  align="right">Sunset</StyledTableCell>
+            <StyledTableCell  align="right">Maghrib</StyledTableCell>
+            <StyledTableCell  align="right">Isha</StyledTableCell>
+            <StyledTableCell  align="right">Midnight</StyledTableCell>
 
           </TableRow>
         </TableHead>
@@ -71,10 +70,16 @@ export default function Timings() {
             <StyledTableCell component="th">
               {x.date.readable}
             </StyledTableCell>
-            <StyledTableCell align="right">{x.calories}</StyledTableCell>
-            <StyledTableCell align="right">{x.fat}</StyledTableCell>
-            <StyledTableCell align="right">{x.carbs}</StyledTableCell>
-            <StyledTableCell align="right">{x.protein}</StyledTableCell>
+            <StyledTableCell align="right">{x.timings.Imsak.split(' ')[0]}</StyledTableCell>
+            <StyledTableCell align="right">{x.timings.Fajr.split(' ')[0]}</StyledTableCell>
+            <StyledTableCell align="right">{x.timings.Sunrise.split(' ')[0]}</StyledTableCell>
+            <StyledTableCell align="right">{x.timings.Dhuhr.split(' ')[0]}</StyledTableCell>
+            <StyledTableCell align="right">{x.timings.Asr.split(' ')[0]}</StyledTableCell>
+            <StyledTableCell align="right">{x.timings.Sunset.split(' ')[0]}</StyledTableCell>
+            <StyledTableCell align="right">{x.timings.Maghrib.split(' ')[0]}</StyledTableCell>
+            <StyledTableCell align="right">{x.timings.Isha.split(' ')[0]}</StyledTableCell>
+            <StyledTableCell align="right">{x.timings.Midnight.split(' ')[0]}</StyledTableCell>
+
           </StyledTableRow>
           ))}
         </TableBody>

@@ -1,7 +1,9 @@
 import React, {useEffect, useReducer, createContext, useMemo } from 'react';
 
 export const StateContext = createContext();
-const initialState = JSON.parse(localStorage.getItem('Salah_Timing')) || {location:{lat: 52.40, lon: 13.39}, method: 2};
+const m = new Date().getMonth()+1;
+const y = new Date().getFullYear();
+const initialState = JSON.parse(localStorage.getItem('Salah_Timing')) || {location:{lat: 52.40, lon: 13.39}, method: 2, m: m, y: y};
 
 const reducer = (state, action) => {
     switch (action.type) {
@@ -11,6 +13,8 @@ const reducer = (state, action) => {
             return {...state, method: action.payLoad};
         case 'calender':
             return {...state, calender: action.payLoad}
+        case 'date':
+          return {...state, m: action.payLoad.m, y: action.payLoad.y}
       
       default:
         throw new Error();

@@ -88,9 +88,8 @@ function DashboardContent() {
     setOpen(!open);
   };
   const {state, dispatch} = useContext(StateContext);
-
   useEffect(()=>{
-    fetch(`https://api.aladhan.com/v1/calendar?latitude=52.508515&longitude=13.2854872&method=${state.method}&month=5&year=2022`)
+    fetch(`https://api.aladhan.com/v1/calendar?latitude=52.508515&longitude=13.2854872&method=${state.method}&month=${state.m}&year=${state.y}`)
     .then(res => res.json())
     .then(ans => {
       // console.log(ans)
@@ -98,7 +97,7 @@ function DashboardContent() {
         dispatch({type: 'calender', payLoad: ans.data})
       }})
     .catch(e => console.log(e))
-}, [dispatch])
+}, [dispatch, state.m, state.y, state.method])
 // //console.log(state)
   return (
     <ThemeProvider theme={mdTheme}>
@@ -201,12 +200,10 @@ function DashboardContent() {
               <Grid item xs={12}>
                 <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
                   <div className='flex justify-around flex-wrap text-xs'>
-                    <span className='bg-gray-200 p-1.5'><strong>Time Zone: </strong>{state.calender[0].meta.timezone}</span>
-                    <span className='bg-gray-200 p-1.5'><strong>Source: </strong>{state.calender[0].meta.method.name}</span>
+                    <span className='bg-gray-200 p-1.5 m-0.5'><strong>Time Zone: </strong>{state.calender[0].meta.timezone}</span>
+                    <span className='bg-gray-200 p-1.5 m-0.5'><strong>Source: </strong>{state.calender[0].meta.method.name}</span>
                   </div>
                    
-                
-
                 </Paper>
               </Grid>
             </Grid>

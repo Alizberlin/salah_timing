@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from 'react';
+import React from 'react';
 import { styled, createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import MuiDrawer from '@mui/material/Drawer';
@@ -12,14 +12,12 @@ import IconButton from '@mui/material/IconButton';
 import Badge from '@mui/material/Badge';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
-//import Paper from '@mui/material/Paper';
-//import Link from '@mui/material/Link';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { mainListItems, secondaryListItems } from '../listitems';
 import NestedList from '../settingsList';
-import { StateContext } from '../stateManager';
+import ViewsDatePicker from '../picker';
 
 
 
@@ -77,8 +75,6 @@ function DashboardContent() {
   const toggleDrawer = () => {
     setOpen(!open);
   };
-
-const {dispatch} = useContext(StateContext);
 
   return (
     <ThemeProvider theme={mdTheme}>
@@ -154,6 +150,11 @@ const {dispatch} = useContext(StateContext);
           <Container maxWidth="s" sx={{ mt: 4, mb: 4 }}>
             <Grid container spacing={3}>
               <NestedList />
+            </Grid>
+          </Container>
+          <Container maxWidth="s" sx={{ mt: 4, mb: 4 }}>
+            <Grid container spacing={3}>
+              <ViewsDatePicker />
             </Grid>
           </Container>
         </Box>
