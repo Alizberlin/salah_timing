@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/salah_timing/static/css/main.2f14309d.css",
-    "main.js": "/salah_timing/static/js/main.9d1aef4c.js",
+    "main.js": "/salah_timing/static/js/main.2b7c929f.js",
     "static/js/787.7de701e6.chunk.js": "/salah_timing/static/js/787.7de701e6.chunk.js",
     "static/media/roboto-all-500-normal.woff": "/salah_timing/static/media/roboto-all-500-normal.52cb737b682eb9661ee1.woff",
     "static/media/roboto-all-700-normal.woff": "/salah_timing/static/media/roboto-all-700-normal.ef6d1d09b20b877fee4e.woff",
@@ -37,11 +37,11 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "/salah_timing/static/media/roboto-greek-ext-700-normal.9674bc0ae12c2551d9d1.woff2",
     "index.html": "/salah_timing/index.html",
     "main.2f14309d.css.map": "/salah_timing/static/css/main.2f14309d.css.map",
-    "main.9d1aef4c.js.map": "/salah_timing/static/js/main.9d1aef4c.js.map",
+    "main.2b7c929f.js.map": "/salah_timing/static/js/main.2b7c929f.js.map",
     "787.7de701e6.chunk.js.map": "/salah_timing/static/js/787.7de701e6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2f14309d.css",
-    "static/js/main.9d1aef4c.js"
+    "static/js/main.2b7c929f.js"
   ]
 }
