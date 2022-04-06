@@ -71,9 +71,9 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
           easing: theme.transitions.easing.sharp,
           duration: theme.transitions.duration.leavingScreen,
         }),
-        width: theme.spacing(7),
+        width: theme.spacing(0),
         [theme.breakpoints.up('sm')]: {
-          width: theme.spacing(9),
+          width: theme.spacing(0),
         },
       }),
     },
@@ -171,16 +171,17 @@ function DashboardContent() {
         >
           <Toolbar />
           <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-            <Grid container spacing={3}>
+            <Grid container spacing={2}>
               <Grid item xs={12} md={8} lg={9}>
                 <Paper
                   sx={{
-                    p: 2,
+                    p: 0,
                     display: 'flex',
                     flexDirection: 'column',
-                    height: 240,
+                    height: 360,
                   }}
                 >
+                  <h1 className="text-center p-1">{state.calender[0].date.readable.split(' ')[1]}{' '}{state.calender[0].date.readable.split(' ')[2]}</h1>
                     <Timings />
                 </Paper>
               </Grid>
@@ -190,7 +191,7 @@ function DashboardContent() {
                     p: 2,
                     display: 'flex',
                     flexDirection: 'column',
-                    height: 240,
+                    height: 300,
                   }}
                 >
                     <MyMap />
@@ -198,10 +199,10 @@ function DashboardContent() {
                 </Paper>
               </Grid>
               <Grid item xs={12}>
-                <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
+                <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column',  height: 100, }}>
                   <div className='flex justify-around flex-wrap text-xs'>
-                    {/* <span className='bg-gray-200 p-1.5 m-0.5'><strong>Time Zone: </strong>{state.calender[0].meta.timezone}</span>
-                    <span className='bg-gray-200 p-1.5 m-0.5'><strong>Source: </strong>{state.calender[0].meta.method.name}</span> */}
+                    <span className='bg-gray-200 p-1.5 m-0.5'><strong>Time Zone: </strong>{state.calender[0].meta.timezone}</span>
+                    <span className='bg-gray-200 p-1.5 m-0.5'><strong>Source: </strong>{state.calender[0].meta.method.name}</span>
                   </div>
                    
                 </Paper>

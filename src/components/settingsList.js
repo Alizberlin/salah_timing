@@ -19,6 +19,7 @@ export default function NestedList() {
   const {state, dispatch} = React.useContext(StateContext)
   const method = (m) => {
       dispatch({type: 'method', payLoad: m})
+      handleClick();
   }
   return (
     <List
